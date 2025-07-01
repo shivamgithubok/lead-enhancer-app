@@ -1,0 +1,74 @@
+.app-layout {
+    display: flex;
+    min-height: 100vh;
+    background: #181824;
+}
+
+.sidebar {
+    background-color: #23233a;
+    padding: 32px 20px;
+    width: 240px;
+    height: 100vh;
+    box-shadow: 2px 0 12px rgba(0,0,0,0.08);
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 32px;
+    color: #fbbf24;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar li {
+    padding: 12px 0 12px 8px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 1.08rem;
+}
+.sidebar li:hover {
+    background: #28284a;
+    color: #fbbf24;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 32px 40px;
+    min-width: 0;
+}
+
+.navbar {
+    background-color: #20202f;
+    padding: 18px 24px;
+    margin-bottom: 28px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links span {
+    margin-right: 22px;
+    cursor: pointer;
+    font-size: 1.08rem;
+    color: #f3f3f3;
+    transition: color 0.2s;
+}
+
+.nav-links span:hover, .nav-links .active {
+    color: #fbbf24;
+    font-weight: 600;
+}
+  
